@@ -1,0 +1,466 @@
+/* Styling for the button */
+
+body {
+  background-image: url("../assets/background/swirl.png");
+  font-family: Bahnschrift, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.show-column {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  /*justify-items: center;*/
+  flex-direction: column;
+}
+
+/*region GenButton-Style*/
+.gen-button {
+  outline: none;
+  color: #333;
+  cursor: pointer;
+  height: 2.5rem;
+  min-width: 80%;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  padding: 0px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+@media (min-width: 703px) {
+  .gen-button {
+    min-width: 100%;
+    font-size: 1.5rem;
+    height: 4rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.gen-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.gen-heading {
+  color: #000000;
+  text-align: center;
+  border-bottom-style: solid;
+}
+/*endregion*/
+
+/*region SmallPokeCard-Style*/
+.small-pokecard {
+  border-radius: 3px;
+  border-width: 8px;
+  border-style: double;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  /*border-color: white;*/
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.small-pokecard .pokename {
+  border-radius: 10px;
+  border-bottom-width: 5px;
+  border-bottom-style: double;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*border-color: white;*/
+  /*color :white*/
+}
+
+.small-pokecard .pokeimage {
+  margin-top: -0.5rem;
+  width: 256px;
+  height: 256px;
+}
+
+.small-pokecard .pokeid {
+  text-align: right;
+  margin-bottom: 0px;
+  margin-right: 7px;
+  margin-top: -25px;
+  font-size: small;
+  color: rgba(33, 37, 41, 0.38);
+}
+
+.small-pokecard .poketype {
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  width: 69px;
+}
+
+.small-pokecard.hover-animated {
+  animation: jump 0.2s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0) scale(1.01);
+  }
+  50% {
+    transform: translateY(-6px) scale(0.99);
+  }
+  100% {
+    transform: translateY(0) scale(1.01);
+  }
+}
+/*endregion*/
+
+/*region GIF-Style*/
+.gif {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Display flex items one on top of the other */
+  margin-top: auto;
+  /*margin-bottom: auto;*/
+}
+
+.gif img {
+  max-width: 80%;
+}
+
+.bling-anim::after {
+  content: attr(bling-text);
+  opacity: 0;
+  animation-name: bling-anim;
+  animation-duration: 1.65s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bling-anim {
+  50% {
+    opacity: 1;
+  }
+}
+/*endregion*/
+
+/*region FilterBox-Style*/
+.filter-box {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.filter-box input {
+  background: transparent;
+  border-width: 0px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding-bottom: 0.5rem;
+  min-width: 100%;
+}
+
+.filter-row {
+  min-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (min-width: 816px) {
+  .filter-row {
+    min-width: 50%;
+  }
+}
+
+.filter-box img {
+  width: 24px;
+  height: 24px;
+  margin-left: -24px;
+  margin-top: 2px;
+}
+
+.filter-box ::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.sort-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-button {
+  height: 1.5rem;
+  width: 4rem;
+
+  transition: all 0.3s ease-in-out;
+  padding-right: -100px;
+  border: 0.01rem solid rgba(255, 255, 255, 0.05);
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  text-decoration: none;
+}
+
+.arrow-container {
+  position: relative;
+  display: inline-block;
+  right: -4px;
+  font-size: 8px;
+}
+
+.sort-button .arrow {
+  position: absolute;
+}
+
+.sort-button .up-arrow {
+  top: -11px;
+}
+
+.sort-button .down-arrow {
+  /*top: 0px;*/
+}
+
+.sort-button.active {
+  color: orange;
+}
+
+.sort-button span {
+  color: white;
+
+}
+
+.sort-button span.active {
+  color: orange;
+}
+/*endregion*/
+
+/*region Detail-Style*/
+.detail-bar {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-bar p {
+  margin: 0px;
+  color: white;
+  font-size: 2rem;
+}
+
+.detail-info {
+  text-align: center;
+  border-bottom: 2px solid;
+  overflow: auto;
+}
+
+.detail-info .pokeimage {
+  width: 100%;
+  max-width: 450px;
+}
+
+.detail-info .poketype {
+  margin-top: 0.15rem;
+  margin-right: 0.3rem;
+  /*margin-left: 0.2rem;*/
+  height: 24px;
+}
+
+.detail-info .poke-ability {
+  margin-top: 0.15rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+/*endregion*/
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+
+  margin: auto;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+tr {
+  border-bottom: 0.1rem solid;
+}
+
+td {
+  padding: 8px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.quiz-pokeimage {
+  width: 100%;
+  max-width: 450px;
+  filter: brightness(0.05);
+  transition: filter 0.7s ease-in-out;
+}
+
+.quiz-pokeimage.active {
+  filter: brightness(1);
+}
+
+.radio-container {
+  /*display: inline-block;*/
+  border: 2px solid;
+  border-radius: 50px;
+  background-color: #333;
+  padding: 3%;
+  position: relative;
+  width: 90%;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.option-text {
+  color: white;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.radio-container input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  right: 5%;
+
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: white;
+}
+
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+  /*background-color: #ff5c5c;*/
+  background-image: url("../assets/misc/small_pokeball.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.quiz-status {
+  font-size: 1rem;
+  /*color: red;*/
+}
+
+.quiz-button {
+  outline: none;
+  color: #333;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 30%;
+  min-width: 200px;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  background-color: #ffffff;
+}
+
+.subscribe-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.subscribe-box {
+  max-width: 400px;
+  /*aspect-ratio: 1;*/
+  max-height: 400px;
+  border: 2px solid black;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.subscribe-text {
+  height: 100vh;
+  color: white;
+  background-color: #333;
+  padding-top: 0.5rem;
+}
+
+.subscribe-form ::placeholder {
+  color: #333;
+  opacity: 0.3;
+}
+
+.subscribe-form input {
+  padding-left: 10px;
+  border: 0px;
+  border-radius: 5px;
+  height: 32px;
+}
+
+.subscribe-form button {
+  border: 0px;
+  background: white;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: black;
+
+  height: 32px;
+  /*width: 32px;*/
+}
+
+.line {
+  position: relative;
+  top: 0%;
+  left: 0;
+  right: 0;
+  width: 26px;
+  height: 10px;
+  background-color: #000;
+}
+
+.subscribe-status {
+  margin-top: 5px;
+  font-size: 12px;
+  color: red;
+}

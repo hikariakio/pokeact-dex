@@ -1,0 +1,16 @@
+.nav-logo a {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo img {
+  width: 28px;
+  translate: 47px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

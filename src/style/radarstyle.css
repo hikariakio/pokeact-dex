@@ -1,0 +1,37 @@
+.shape {
+    fill-opacity: 0.7;
+
+
+}
+.shape:hover {
+    fill-opacity: 0.3;
+    z-index: 100;
+}
+.scale {
+    stroke: #000000;
+    stroke-width: 40;
+    stroke-opacity: 0.2;
+    opacity: 0.08;
+    /*fill-opacity : 100%;*/
+}
+.axis {
+    stroke: #555;
+    stroke-width: 0.2;
+}
+.dot {
+    /*fill: #fff;*/
+    stroke: #e7e8e7;
+    stroke-opacity: 0.5;
+    r: 3;
+    -webkit-transition: r 0.2s;
+    -o-transition: r 0.2s;
+    transition: r 0.2s;
+}
+.dot:hover {
+    r: 6;
+}
+.caption {
+    fill: #444;
+    font-weight: 500;
+    text-shadow: 2px 2px 0 #fff;
+}
