@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/pokeact-dex/static/css/main.2ed00995.css",
+    "main.js": "/pokeact-dex/static/js/main.3efdcffc.js",
+    "static/js/787.46917dfa.chunk.js": "/pokeact-dex/static/js/787.46917dfa.chunk.js",
+    "static/media/pikachu_waiting.gif": "/pokeact-dex/static/media/pikachu_waiting.8207558c939db6cb6ef4.gif",
+    "static/media/meowth_404.gif": "/pokeact-dex/static/media/meowth_404.3df13e9b53e9d4b44b4a.gif",
+    "static/media/gastly_missing.gif": "/pokeact-dex/static/media/gastly_missing.b3db8ea6e20e0a3c1392.gif",
+    "static/media/snorlex_sleep.gif": "/pokeact-dex/static/media/snorlex_sleep.687f7f9fb462332dd2f1.gif",
+    "static/media/rowlet_subscribe.gif": "/pokeact-dex/static/media/rowlet_subscribe.4d4c659823df4a405f3a.gif",
+    "static/media/small_pokeball.png": "/pokeact-dex/static/media/small_pokeball.285184669e359f660e9d.png",
+    "static/media/type11.png": "/pokeact-dex/static/media/type11.e568bf45d081a2dcad4a.png",
+    "static/media/type17.png": "/pokeact-dex/static/media/type17.1c4c60a3c8fab8d70917.png",
+    "static/media/type3.png": "/pokeact-dex/static/media/type3.30eaedf1d1e6419d49a5.png",
+    "static/media/type12.png": "/pokeact-dex/static/media/type12.e228b6c838641cc403bf.png",
+    "static/media/type1.png": "/pokeact-dex/static/media/type1.0b2b6f0fcd771e93ee17.png",
+    "static/media/type5.png": "/pokeact-dex/static/media/type5.62b1c3f8aa42b5f748b8.png",
+    "static/media/type14.png": "/pokeact-dex/static/media/type14.890195fde06c98eb84b9.png",
+    "static/media/type2.png": "/pokeact-dex/static/media/type2.0d8a03b7a2e382f4b82e.png",
+    "static/media/type16.png": "/pokeact-dex/static/media/type16.7afaa2dd504d9387d3d5.png",
+    "static/media/type6.png": "/pokeact-dex/static/media/type6.3c34044a5d4278be075c.png",
+    "static/media/type4.png": "/pokeact-dex/static/media/type4.100ef9f5605abcec7e2f.png",
+    "static/media/type13.png": "/pokeact-dex/static/media/type13.0e2cabda9142ec4571b6.png",
+    "static/media/type10.png": "/pokeact-dex/static/media/type10.1ec59baa33b24d60b9d7.png",
+    "static/media/type18.png": "/pokeact-dex/static/media/type18.4dd2acb19c62ee604556.png",
+    "static/media/type8.png": "/pokeact-dex/static/media/type8.df3c9a9a54db21484f6a.png",
+    "static/media/type7.png": "/pokeact-dex/static/media/type7.65a1740337f5f4a3985f.png",
+    "static/media/logo.svg": "/pokeact-dex/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pokeact-dex/index.html",
+    "main.2ed00995.css.map": "/pokeact-dex/static/css/main.2ed00995.css.map",
+    "main.3efdcffc.js.map": "/pokeact-dex/static/js/main.3efdcffc.js.map",
+    "787.46917dfa.chunk.js.map": "/pokeact-dex/static/js/787.46917dfa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ed00995.css",
+    "static/js/main.3efdcffc.js"
+  ]
+}
