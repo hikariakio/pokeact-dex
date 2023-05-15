@@ -27,4 +27,4 @@ GoogleMap API is used to display Pokemons' Locations.
 * `npm start` again.
 
 ## Video Walkthrough
-https://www.youtube.com/watch?v=k0xnZ5s_fUA&t=1s
+https://www.youtube.com/watch?v=k0xnZ5s_fUA&t
