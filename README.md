@@ -2,6 +2,10 @@
 
 A mini pokedex web-app created by React Framework. 
 
+## Demo Link
+
+https://hikariakio.github.io/pokeact-dex/
+
 ## Installation
 <!-- installation -->
 
