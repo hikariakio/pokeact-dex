@@ -3,7 +3,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
-import { Box, Button, Modal, Typography } from "@mui/material";
 import { CreditModal } from "./CreditModal";
 
 export function Footer() {
@@ -30,13 +29,13 @@ export function Footer() {
             <h4>About</h4>
             <ul>
               <li>
-                <a>Ye Gaung Kyaw</a>
+                Ye Gaung Kyaw
               </li>
               <li>
-                <a>n10923543-IFN666</a>
+                n10923543-IFN666
               </li>
               <li>
-                <a>Web&Mobile App Development</a>
+                Web&Mobile App Development
               </li>
             </ul>
           </div>
@@ -55,6 +54,7 @@ export function Footer() {
               style={{
                 display: "flex",
                 justifyContent: "space-evenly",
+
               }}
             >
               <div
@@ -62,9 +62,18 @@ export function Footer() {
                   border: "1px solid white",
                   borderRadius: "10px",
                   padding: "0.3rem",
+                  textDecoration : "none",
+                  color:"white",
                 }}
               >
-                <YouTubeIcon fontSize="small" />
+                <a
+                    href={"https://www.youtube.com/watch?v=k0xnZ5s_fUA&t"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                    style={{
+                        color:"white",
+                    }}
+                ><YouTubeIcon fontSize="small" /></a>
               </div>
               <div
                 style={{
@@ -73,7 +82,14 @@ export function Footer() {
                   padding: "0.3rem",
                 }}
               >
-                <LinkedInIcon fontSize="small" />
+                  <a
+                      href={"https://www.linkedin.com/in/yegaungkyaw/"}
+                      target={"_blank"}
+                      rel="noreferrer"
+                      style={{
+                          color:"white",
+                      }}
+                  ><LinkedInIcon fontSize="small" /></a>
               </div>
               <div
                 style={{
@@ -82,7 +98,14 @@ export function Footer() {
                   padding: "0.3rem",
                 }}
               >
-                <GitHubIcon fontSize="small" />
+                  <a
+                      href={"https://github.com/hikariakio/pokeact-dex/"}
+                      target={"_blank"}
+                      rel="noreferrer"
+                      style={{
+                          color:"white",
+                      }}
+                  ><GitHubIcon fontSize="small" /></a>
               </div>
             </div>
             <CreditModal />

@@ -126,7 +126,7 @@ export function PokeDetail({ pokeID }) {
           />
         </Grid>
         <Grid xs={12} sm={12} md={6} order={4}>
-          <Map id={pokemon["id"]} />
+          {/*<Map id={pokemon["id"]} />*/}
         </Grid>
       </Grid>
     </>
